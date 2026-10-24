@@ -1,0 +1,61 @@
+.pattern-haori {
+  background-color: var(--surface);
+  background-image: conic-gradient(
+    var(--bg) 25%,
+    var(--surface) 0 50%,
+    var(--bg) 0 75%,
+    var(--surface) 0
+  );
+  background-size: 48px 48px;
+}
+
+.pattern-uroko {
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(30deg, color-mix(in srgb, var(--primary) 12%, transparent) 12%, transparent 12.5%, transparent 87%, color-mix(in srgb, var(--primary) 12%, transparent) 87.5%, color-mix(in srgb, var(--primary) 12%, transparent)),
+    linear-gradient(150deg, color-mix(in srgb, var(--primary) 12%, transparent) 12%, transparent 12.5%, transparent 87%, color-mix(in srgb, var(--primary) 12%, transparent) 87.5%, color-mix(in srgb, var(--primary) 12%, transparent)),
+    linear-gradient(30deg, color-mix(in srgb, var(--primary) 12%, transparent) 12%, transparent 12.5%, transparent 87%, color-mix(in srgb, var(--primary) 12%, transparent) 87.5%, color-mix(in srgb, var(--primary) 12%, transparent)),
+    linear-gradient(150deg, color-mix(in srgb, var(--primary) 12%, transparent) 12%, transparent 12.5%, transparent 87%, color-mix(in srgb, var(--primary) 12%, transparent) 87.5%, color-mix(in srgb, var(--primary) 12%, transparent)),
+    linear-gradient(60deg, color-mix(in srgb, var(--primary) 12%, transparent) 25%, transparent 25.5%, transparent 75%, color-mix(in srgb, var(--primary) 12%, transparent) 75%, color-mix(in srgb, var(--primary) 12%, transparent)),
+    linear-gradient(60deg, color-mix(in srgb, var(--primary) 12%, transparent) 25%, transparent 25.5%, transparent 75%, color-mix(in srgb, var(--primary) 12%, transparent) 75%, color-mix(in srgb, var(--primary) 12%, transparent));
+  background-position:
+    0 0,
+    0 0,
+    24px 42px,
+    24px 42px,
+    0 0,
+    24px 42px;
+  background-size: 48px 84px;
+}
+
+.mist-overlay {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 12% 16%, color-mix(in srgb, var(--highlight) 9%, transparent), transparent 42%),
+    radial-gradient(ellipse at 88% 34%, color-mix(in srgb, var(--primary) 8%, transparent), transparent 38%),
+    radial-gradient(ellipse at 50% 100%, color-mix(in srgb, var(--highlight) 5%, transparent), transparent 48%);
+}
+
+.glow-edge {
+  border: 1px solid var(--border);
+  box-shadow: 0 0 24px var(--glow);
+}
+
+.slash-line {
+  width: 4.5rem;
+  height: 2px;
+  background: linear-gradient(105deg, var(--accent) 0 62%, transparent 62% 100%);
+  transform: skewX(-32deg);
+}
+
+.slash-divider {
+  width: 100%;
+  height: 1.25rem;
+  background:
+    linear-gradient(174deg, transparent 0 47%, var(--accent) 48% 51%, transparent 52% 100%),
+    linear-gradient(176deg, transparent 0 57%, color-mix(in srgb, var(--highlight) 24%, transparent) 58% 59%, transparent 60% 100%);
+  opacity: 0.8;
+}
